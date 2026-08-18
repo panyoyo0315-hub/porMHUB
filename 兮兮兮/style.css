@@ -1,0 +1,123 @@
+/* 全局樣式重置與字型設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 卡片容器 */
+.card-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* 標題區域 */
+.header {
+    background-color: #2b5876;
+    color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* 內容區域 */
+.content {
+    padding: 24px;
+}
+
+/* 表單表格設定 */
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table th,
+.profile-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eef2f5;
+}
+
+.profile-table tr:last-child th,
+.profile-table tr:last-child td {
+    border-bottom: none;
+}
+
+.profile-table th {
+    width: 30%;
+    color: #4a5568;
+    font-size: 1.05rem;
+    font-weight: bold;
+    background-color: #f8fafc;
+    vertical-align: middle;
+}
+
+.profile-table td {
+    width: 70%;
+    color: #2d3748;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* 音樂技能標籤與清單樣式 */
+.profile-table ul {
+    list-style: none;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 4px 0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.clarinet {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.drums {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+/* RWD 響應式調整（手機螢幕） */
+@media (max-width: 480px) {
+    .profile-table th,
+    .profile-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .profile-table th {
+        background-color: transparent;
+        padding-bottom: 4px;
+        color: #718096;
+    }
+
+    .profile-table td {
+        padding-top: 4px;
+        padding-bottom: 16px;
+    }
+}
